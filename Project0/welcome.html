@@ -18,8 +18,15 @@
     <body style="background-color:lightskyblue ;">
         <img src="hi.gif" width="700px"height="700px" align = "left">
         <centre>
-        <h1 style="text-align:justify;"><a href="aboutme.html"><button>About me</button></a></h1>
+         <h1 id="myHeader">Welcome</h1>   
+        <a href="aboutme.html"><button>About me</button></a>
         <a href ='feedback.html'><button>FeedBack </button></a>
-        </centre>   
+        <button onclick="display()">Click Me</button>
+        </centre> 
+        <script>
+            function display() {
+                document.getElementById("myHeader").innerHTML = "Have a nice day! Thank You for viewing.";
+            }
+        </script>  
     </body>
 </html>
